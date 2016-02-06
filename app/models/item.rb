@@ -1,3 +1,4 @@
 class Item < ActiveRecord::Base
-  belongs_to :item
+  has_many :photos
+  belongs_to :category
 end

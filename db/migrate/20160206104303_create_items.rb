@@ -10,7 +10,7 @@ class CreateItems < ActiveRecord::Migration
       t.string :location
       t.int :telephone
       t.boolean :rent
-      t.references :item, index: true, foreign_key: true
+      t.references :category, index: true, foreign_key: true
 
       t.timestamps null: false
     end
