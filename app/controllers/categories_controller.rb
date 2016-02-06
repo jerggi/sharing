@@ -10,6 +10,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
+    @items = Category.find(params[:id]).items
   end
 
   # GET /categories/new

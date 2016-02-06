@@ -1,0 +1,4 @@
+<p>Sharing.com</p>
+<% @categories.each do |c| %>
+  <p><%= link_to c.name, "categories/#{c.id}" %> </p>
+<% end %>

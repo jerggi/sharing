@@ -5,5 +5,9 @@
   <%= @category.name %>
 </p>
 
+<% @items.each do |item| %>
+  <p> <%= link_to item.name, root_url + "items/#{item.id}" %></p>
+<% end %>
+
 <%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+<%= link_to 'Back', root_url %>
